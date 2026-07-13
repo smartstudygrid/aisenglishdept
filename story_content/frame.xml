@@ -538,16 +538,16 @@
           <color name="bg">
             <fill type="linear" rotation="90">
               <colors>
-                <color rgb="0xE9E9E9" alpha="100" stop="0" />
-                <color rgb="0xCFCFCF" alpha="100" stop="255" />
+                <color rgb="0xFFFFFF" alpha="100" stop="0" />
+                <color rgb="0xFFFFFF" alpha="100" stop="255" />
               </colors>
             </fill>
           </color>
           <color name="border">
             <fill type="linear" rotation="90">
               <colors>
-                <color rgb="0xE9E9E9" alpha="100" stop="0" />
-                <color rgb="0xF3F3F3" alpha="100" stop="255" />
+                <color rgb="0xFFFFFF" alpha="100" stop="0" />
+                <color rgb="0xFFFFFF" alpha="100" stop="255" />
               </colors>
             </fill>
           </color>
@@ -1289,6 +1289,7 @@
         <slidelink slideid="_player.6IkgetfOIoQ" displaytext="Untitled Scene" expand="true" type="slide">
           <links>
             <slidelink slideid="_player.6IkgetfOIoQ.5VwWqeDYFjh" displaytext="Home" expand="false" type="slide" />
+            <slidelink slideid="_player.6IkgetfOIoQ.6PxVDqP2n10" displaytext="Co-Curriculars" expand="false" type="slide" />
           </links>
         </slidelink>
       </links>
