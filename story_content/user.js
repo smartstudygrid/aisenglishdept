@@ -2,16 +2,39 @@ function ExecuteScript(strId)
 {
   switch (strId)
   {
-      case "6YwWaapRomc":
+      case "6SFQyoaVcsA":
         Script1();
         break;
-      case "6SZKU9JxOBX":
+      case "6JXJ62Q8Kpj":
         Script2();
+        break;
+      case "68OqwA32J2w":
+        Script3();
         break;
   }
 }
 
 function Script1()
+{
+  var player = GetPlayer();
+
+// Read existing count from localStorage
+var visits = localStorage.getItem('ais_dashboard_visits');
+
+if (!visits) {
+    visits = 1;
+} else {
+    visits = parseInt(visits) + 1;
+}
+
+// Store updated value back to localStorage
+localStorage.setItem('ais_dashboard_visits', visits);
+
+// Update Storyline variable
+player.SetVar("VisitCount", visits);
+}
+
+function Script2()
 {
   var elem = document.documentElement;
 
@@ -40,7 +63,7 @@ if (!document.fullscreenElement && !document.mozFullScreenElement && !document.w
 }
 }
 
-function Script2()
+function Script3()
 {
   var inputs = document.querySelectorAll('input');
 for (var i = 0; i < inputs.length; i++) {
