@@ -2,14 +2,17 @@ function ExecuteScript(strId)
 {
   switch (strId)
   {
-      case "6PT3vKWSHmP":
+      case "6Syk98tZkvT":
         Script1();
         break;
-      case "5lHWkjPIoRh":
+      case "5jqBPWTp2fq":
         Script2();
         break;
-      case "5fwi0zv2lYi":
+      case "5yEQVjWFaPi":
         Script3();
+        break;
+      case "6ZKVjg1zbY4":
+        Script4();
         break;
   }
 }
@@ -68,6 +71,35 @@ function Script3()
   var inputs = document.querySelectorAll('input');
 for (var i = 0; i < inputs.length; i++) {
     inputs[i].type = 'password';
+}
+}
+
+function Script4()
+{
+  var elem = document.documentElement;
+
+if (!document.fullscreenElement && !document.mozFullScreenElement && !document.webkitFullscreenElement && !document.msFullscreenElement) {
+  // Enter Fullscreen
+  if (elem.requestFullscreen) {
+    elem.requestFullscreen();
+  } else if (elem.msRequestFullscreen) {
+    elem.msRequestFullscreen();
+  } else if (elem.mozRequestFullScreen) {
+    elem.mozRequestFullScreen();
+  } else if (elem.webkitRequestFullscreen) {
+    elem.webkitRequestFullscreen(Element.ALLOW_KEYBOARD_INPUT);
+  }
+} else {
+  // Exit Fullscreen
+  if (document.exitFullscreen) {
+    document.exitFullscreen();
+  } else if (document.msExitFullscreen) {
+    document.msExitFullscreen();
+  } else if (document.mozCancelFullScreen) {
+    document.mozCancelFullScreen();
+  } else if (document.webkitExitFullscreen) {
+    document.webkitExitFullscreen();
+  }
 }
 }
 
