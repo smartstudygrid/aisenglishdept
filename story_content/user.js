@@ -2,13 +2,13 @@ function ExecuteScript(strId)
 {
   switch (strId)
   {
-      case "6GDlnZVli8h":
+      case "5eRbsA9BEXm":
         Script1();
         break;
-      case "6AvnyiHJ8VC":
+      case "6fuUKkWEYWn":
         Script2();
         break;
-      case "68Xkb7yaenC":
+      case "6JqI8tiG9Pi":
         Script3();
         break;
   }
