@@ -1,0 +1,41 @@
+/* high-polish overrides for scorer + squad (loaded last so it wins) */
+body[data-view="scorer"] .card{box-shadow:0 12px 28px rgba(0,0,0,.5);transition:transform .14s ease,box-shadow .14s ease,border-color .14s ease}
+body[data-view="scorer"] .card:hover{transform:translateY(-2px);border-color:rgba(245,208,115,.65);box-shadow:0 16px 34px rgba(0,0,0,.55)}
+body[data-view="scorer"] .btn{box-shadow:0 8px 20px rgba(0,0,0,.4)}
+body[data-view="scorer"] .btn:active{transform:scale(.98)}
+body[data-view="scorer"] .tabs .btn{border-radius:999px}
+body[data-view="squad"] .card{transition:transform .14s ease}
+body[data-view="squad"] .card:hover{transform:translateY(-2px)}
+body[data-view="squad"] .btn:active{transform:scale(.98)}
+/* points table */
+.pt-card{border:1px solid rgba(200,168,75,.3);border-radius:12px;overflow:hidden;background:linear-gradient(145deg,rgba(255,255,255,.06),rgba(255,255,255,.02))}
+.pt-card table.pt{margin-top:0}
+.pt-pos{display:inline-flex;width:24px;height:24px;border-radius:50%;background:rgba(255,255,255,.12);align-items:center;justify-content:center;font:700 12px Oswald}
+.pt-pts{display:inline-block;min-width:34px;padding:3px 10px;border-radius:999px;background:linear-gradient(135deg,#c8a84b,#f5d073);color:#0a0a1a;font:800 14px Oswald}
+.pt-form{white-space:nowrap}
+.pf{display:inline-flex;width:20px;height:20px;border-radius:50%;font:700 11px Oswald;font-style:normal;align-items:center;justify-content:center;margin-right:2px;vertical-align:middle}
+.pf.w{background:#16a34a;color:#fff}.pf.l{background:#dc2626;color:#fff}.pf.t{background:#6b7280;color:#fff}.pf.a{background:#f59e0b;color:#0a0a1a}
+tr.pt-top td{background:rgba(245,208,115,.10)}
+.pt-legend{padding:9px 10px;font-size:12px;color:rgba(255,255,255,.55);display:flex;gap:6px;flex-wrap:wrap;align-items:center}
+/* tournament stats */
+.st-sec{margin-bottom:14px}
+.st-table{width:100%;border-collapse:collapse;font-size:14px}
+.st-table td{padding:7px 4px;border-top:1px solid rgba(255,255,255,.08);text-align:right}
+.st-table td:first-child{text-align:left}
+.st-table b{color:var(--g)}
+/* broadcast credit attached to TOP of the score ticker */
+.ob-credit{position:absolute;bottom:100%;right:12px;background:rgba(0,0,0,.78);color:#ffd700;font:600 .72rem Oswald;letter-spacing:.14rem;padding:.18rem .7rem;border-radius:.45rem .45rem 0 0;border:.06rem solid rgba(255,215,0,.45);border-bottom:none;white-space:nowrap;text-transform:uppercase}
+/* share-image guard: exports always stay dark */
+#sumImg .mut{color:rgba(255,255,255,.55)!important}
+#sumImg .pt-legend{color:rgba(255,255,255,.55)!important}
+#sumImg .pt-pos{background:rgba(255,255,255,.12)!important;color:#fff!important}
+/* icon buttons: equal-share one-row action bars */
+.ib{flex:1 1 0!important;min-width:0;padding:8px 4px!important;font-size:16px!important;line-height:1!important;text-align:center;margin:0!important}
+.ib-row{display:flex;gap:6px;align-items:stretch}
+.act-row{display:flex;gap:10px;margin-bottom:10px}
+.act-btn{flex:1;display:flex;align-items:center;justify-content:center;background:linear-gradient(180deg,#fffdf6,#f8eed9);border:1.5px solid #c8a84b;border-radius:999px;padding:9px 4px;box-shadow:0 8px 18px rgba(0,0,0,.28),0 2px 4px rgba(0,0,0,.18);cursor:pointer;text-decoration:none;color:#1a2333}
+.act-btn{font:700 14px Oswald,sans-serif;letter-spacing:1px;text-transform:uppercase}
+.act-btn:active{transform:scale(.96)}
+body.light .act-btn{background:linear-gradient(180deg,#ffffff,#f6ead0);color:#1a2333;border-color:#b8912a;box-shadow:0 8px 18px rgba(15,23,42,.16),0 2px 4px rgba(15,23,42,.12)}
+.act-btn:active{transform:scale(.96)}
+body.light .act-btn{background:linear-gradient(180deg,#ffffff,#f6ead0);color:#1a2333;border-color:#b8912a}
