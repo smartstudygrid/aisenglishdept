@@ -224,8 +224,10 @@ body.ovb .foot{display:none}
 .ob.neon .lp{background:linear-gradient(180deg,#67e8f9,#0284c7)}
 .ob.neon .rp{background:linear-gradient(180deg,#818cf8,#4c1d95)}
 .ob.neon .ovs{background:linear-gradient(180deg,#67e8f9,#0369a1)}
-/* big event splash on the right of the screen (4 / 6 / OUT / milestones) */
-.ob-sp{position:fixed;right:5vw;bottom:calc(8.75rem + 1.5rem);z-index:50;text-align:center;pointer-events:none;font-family:Oswald,sans-serif;text-transform:uppercase;animation:obpop 6s ease forwards}
+/* big event splash on the right of the screen (4 / 6 / OUT / milestones).
+   It sits just above the SquareCut watermark, which rides the top edge of the ticker. */
+.ob-sp{position:fixed;right:12px;bottom:calc(8rem + 2.2rem);z-index:50;text-align:center;pointer-events:none;font-family:Oswald,sans-serif;text-transform:uppercase;animation:obpop 6s ease forwards}
+.ob-sp.cyberpunk,.ob-sp.luxury,.ob-sp.lux2{bottom:calc(8.75rem + 2.3rem)}
 .ob-sp b{display:block;font:800 6rem/1 Oswald;letter-spacing:.1em}
 .ob-sp span{display:block;font:700 1.6rem Oswald;letter-spacing:.12em;color:#fff;text-shadow:0 .2rem .6rem rgba(0,0,0,.8)}
 .ob-sp.six b{color:#ffd700;text-shadow:0 0 1.5rem rgba(255,215,0,.9),0 .3rem 0 #7a5f00}
@@ -479,7 +481,7 @@ body.ovb .foot{display:none}
 .ob-over.mt3 .cs i{border-color:#6a6a6e}
 .ob-over.mt3 .cs i.cw{background:radial-gradient(circle at 50% 30%,#f25555,#b30d0d);border-color:#ffb3b3}
 /* the splash and the cards sit above the shorter metallic bar */
-.ob-sp.mt3{--k:1;bottom:calc(114px * var(--k) + 30px * var(--k) + 1.5rem)}
+.ob-sp.mt3{--k:1;bottom:calc(114px * var(--k) + 2.2rem)}
 .ob-over.mt3{--k:1;top:2rem}
 @media(max-width:1450px){.ob-sp.mt3,.ob-over.mt3{--k:.85}}
 @media(max-width:1300px){.ob-sp.mt3,.ob-over.mt3{--k:.75}}
